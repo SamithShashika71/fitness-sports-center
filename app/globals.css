@@ -50,9 +50,14 @@ body { overflow-x: hidden; }
   }
 
   .section-top-line {
-    @apply absolute -top-px left-0 right-0 h-px;
-    background: linear-gradient(to right, transparent, #C89B0A, transparent);
-  }
+  @apply absolute -top-px left-0 right-0 h-px;
+  background: linear-gradient(to right, transparent, #C89B0A, transparent);
+}
+
+  .section-bottom-line {
+  @apply absolute -bottom-px left-0 right-0 h-px;
+  background: linear-gradient(to right, transparent, #C89B0A, transparent);
+}
 
   .stripe-bg {
     background-image: repeating-linear-gradient(
@@ -101,3 +106,24 @@ body { overflow-x: hidden; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
 .delay-600 { transition-delay: 0.6s; }
+
+/* Logo float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-16px); }
+}
+
+/* Glow pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.15); }
+}
+
+/* Visible section separation in light mode */
+section {
+  border-bottom: 1px solid transparent;
+}
+
+:root:not(.dark) section {
+  border-bottom: 1px solid rgba(200, 155, 10, 0.2);
+}

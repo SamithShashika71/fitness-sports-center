@@ -26,10 +26,11 @@ module.exports = {
         body:    ['var(--font-barlow)', 'sans-serif'],
       },
       animation: {
-        'spin-slow':    'spin 20s linear infinite',
-        'spin-reverse': 'spin 30s linear infinite reverse',
-        'shimmer':      'shimmer 3s ease-in-out infinite',
-        'bounce-slow':  'bounce 2s ease-in-out infinite',
+      'spin-slow':    'spin 20s linear infinite',
+      'spin-reverse': 'spin 30s linear infinite reverse',
+      'shimmer':      'shimmer 3s ease-in-out infinite',
+      'bounce-slow':  'bounce 2s ease-in-out infinite',
+      'float':        'float 4s ease-in-out infinite',   
       },
       keyframes: {
         shimmer: {

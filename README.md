@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏋️ Fitness Sports Center
 
-## Getting Started
+A fully responsive promotional website for **Fitness Sports Center** — a modern gym brand built as part of a web development internship evaluation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔗 Live Demo
+
+👉 [https://fsc-official.vercel.app](https://fsc-official.vercel.app)
+
+---
+
+## 🎨 Figma Design
+
+👉 [Figma Design Link](https://www.figma.com/design/Jevozk43F9WgcikF2LQ5LP/Fitness-Sports-Center?node-id=0-1&t=fsox5dqxiHqQz2Di-1)
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Next.js 14** | React framework with App Router |
+| **JavaScript** | Programming language |
+| **Tailwind CSS** | Utility-first styling |
+| **React Hook Form** | Advanced form handling |
+| **Next.js API Routes** | Contact form backend |
+| **Vercel** | Deployment |
+
+---
+
+## 📁 Folder Structure
+```
+fitness-sports-center/
+├── app/
+│   ├── api/
+│   │   └── contact/
+│   │       └── route.js        ← Contact form API
+│   ├── components/
+│   │   ├── Navbar.js           ← Navigation with dark mode
+│   │   ├── Footer.js           ← Footer with links
+│   │   └── ThemeProvider.js    ← Dark/light mode context
+│   ├── sections/
+│   │   ├── HeroSection.js      ← Hero with animated counters
+│   │   ├── AboutSection.js     ← About with scroll reveal
+│   │   ├── ServicesSection.js  ← Services with search & filter
+│   │   ├── MembershipSection.js← Pricing plans
+│   │   ├── TrainersSection.js  ← Trainer cards
+│   │   └── ContactSection.js   ← Contact form
+│   ├── hooks/
+│   │   └── useCounter.js       ← Animated counter hook
+│   ├── globals.css             ← Global styles
+│   ├── layout.js               ← Root layout with fonts
+│   └── page.js                 ← Main page
+├── public/
+│   └── logo.png                ← Gym logo
+├── tailwind.config.js
+├── next.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
+- Node.js 18 or higher
+- npm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+**1. Clone the repository**
+```bash
+git clone https://github.com/SamithShashika71/fitness-sports-center.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**2. Navigate to the project folder**
+```bash
+cd fitness-sports-center
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**3. Install dependencies**
+```bash
+npm install
+```
 
-## Deploy on Vercel
+**4. Start the development server**
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**5. Open in browser**
+```
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Build for Production
+```bash
+npm run build
+npm start
+```
+
+---
+
+## ✨ Features
+
+### Core Features
+- ✅ Responsive design — mobile, tablet, desktop
+- ✅ Hero section with animated stat counters
+- ✅ About section with scroll reveal animations
+- ✅ Services section
+- ✅ Membership pricing plans
+- ✅ Trainers section
+- ✅ Contact form with validation and success feedback
+
+### Bonus Features
+- ✅ **Dark mode** — toggle with localStorage persistence
+- ✅ **Search & filter** — live search and category filter in services
+- ✅ **Animations** — scroll reveal, counter, float, shimmer effects
+- ✅ **API integration** — Next.js API route for contact form
+- ✅ **Advanced form handling** — React Hook Form, real-time validation, character counter, loading state
+
+---
+
+## 🎨 Brand Colors
+
+| Color | Hex |
+|---|---|
+| Gold | `#C89B0A` |
+| Dark Brown | `#1E1A0E` |
+| Black | `#080808` |
+| Dark Gray | `#2E2E2E` |
+| Off White | `#F2EFE6` |
+
+---
+
+*Built for Koncepthive Web Development Internship Evaluation*

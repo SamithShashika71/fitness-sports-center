@@ -1,5 +1,6 @@
 import { Bebas_Neue, Barlow } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from './components/ThemeProvider'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -34,7 +35,9 @@ export default function RootLayout({ children }) {
           transition-colors duration-300
         `}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
